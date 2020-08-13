@@ -1,8 +1,11 @@
 import React from "react";
+import Title from "./components/Title"
 import HelloDiv from "./components/HelloDiv";
 
 function App() {
-  return <HelloDiv />;
+  return(
+    <Title className="bg-success"> Employee Directory</Title>
+  );
 }
 
 export default App;
