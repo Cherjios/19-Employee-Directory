@@ -109,5 +109,22 @@
         "email":"perdrolopez01@gmail.com",
         "phoneNumber":"477-711-0647",
         "Department":"Marketing"
+    },
+    {
+        "img":"https://i.pravatar.cc/300",
+        "Name":"Pedro",
+        "LastName":"Quezada",
+        "email":"perdroquezada01@gmail.com",
+        "phoneNumber":"477-009-0647",
+        "Department":"Sales"
+    },
+    {
+        "img":"https://i.pravatar.cc/300",
+        "Name":"Cesar",
+        "LastName":"Zamora",
+        "email":"cesarzamora@gmail.com",
+        "phoneNumber":"997-009-0647",
+        "Department":"Engineer"
     }
+
 ]
