@@ -125,6 +125,30 @@
         "email":"cesarzamora@gmail.com",
         "phoneNumber":"997-009-0647",
         "Department":"Engineer"
+    },
+    {
+        "img":"https://i.pravatar.cc/300",
+        "Name":"Ana",
+        "LastName":"Lopez",
+        "email":"ana02lopez01@gmail.com",
+        "phoneNumber":"477-666-0647",
+        "Department":"Sales"
+    },
+    {
+        "img":"https://i.pravatar.cc/300",
+        "Name":"Reyna",
+        "LastName":"Ruiz",
+        "email":"laperra@gmail.com",
+        "phoneNumber":"477-998-0647",
+        "Department":"Billing"
+    },
+    {
+        "img":"https://i.pravatar.cc/300",
+        "Name":"Cecilia",
+        "LastName":"Torres",
+        "email":"torresc@gmail.com",
+        "phoneNumber":"111-876-0647",
+        "Department":"Marketing"
     }
 
 ]
