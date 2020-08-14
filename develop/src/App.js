@@ -10,11 +10,17 @@ class App extends Component {
   // Setting this.state.employees to the employees json array
   state = {
     employees: employees,
-    value : ""
+    value: "",
+    key: 0
   };
 
-  handleInputChange = event =>{
-    this.setState({value: event.target.value});
+  keyNumber = ( )=>{
+    this.setState({key: this.state.key + 1})
+  }
+
+
+  handleInputChange = event => {
+    this.setState({ value: event.target.value });
     // const name = event.target.name;
 
     // this.setState({
@@ -24,14 +30,15 @@ class App extends Component {
     console.log(this.state.value);
 
     // Render new obj with value
-    let newOBj = employees.filter(function(employee){
-      return employee.Name.toLowerCase() === event.target.value.toLowerCase() || employee.LastName.toLowerCase() === event.target.value.toLowerCase() || employee.email === event.target.value 
-      || employee.phoneNumber === event.target.value || employee.Department === event.target.value || employee.Name.toLowerCase() + " " + employee.LastName.toLowerCase() === event.target.value.toLowerCase();
+    let newOBj = employees.filter(function (employee) {
+      return employee.Name.toLowerCase() === event.target.value.toLowerCase() || employee.LastName.toLowerCase() === event.target.value.toLowerCase()
+        || employee.email === event.target.value || employee.phoneNumber === event.target.value || employee.Department === event.target.value
+        || employee.Name.toLowerCase() + " " + employee.LastName.toLowerCase() === event.target.value.toLowerCase();
     });
 
     console.log(newOBj);
 
-    this.setState({employees: newOBj})
+    this.setState({ employees: newOBj })
 
   }
 
@@ -54,6 +61,7 @@ class App extends Component {
         </div>
         <br />
         <TableHead>
+          <tbody>
           {this.state.employees.map(employee => (
             <TableBody
               img={employee.img}
@@ -64,6 +72,7 @@ class App extends Component {
               Department={employee.Department}
             />
           ))}
+          </tbody>
         </TableHead>
       </div>
 
