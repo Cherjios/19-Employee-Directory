@@ -16,9 +16,10 @@ state = {
   render(){
 
     return(
-      <div>
+      <div className="container">
          <Title className="bg-success"> Employee Directory</Title>
          <Form />
+         <br />
           <TableHead>
           {this.state.employees.map(employee => (
           <TableBody
