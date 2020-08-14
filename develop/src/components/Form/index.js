@@ -19,31 +19,19 @@ class Form extends Component {
     });
   };
 
-  handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-
-    // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-    alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
-    this.setState({
-      firstName: "",
-      lastName: ""
-    });
-  };
+  
 
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
-        <form className="form-control form-control-lg">
-          <input
+        <form>
+          <input  className="form-control form-control-lg"
             value={this.state.firstName}
             name="firstName"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="First Name"
           />
-          <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
     );
