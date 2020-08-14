@@ -25,7 +25,7 @@ class App extends Component {
 
     // Render new obj with value
     let newOBj = employees.filter(function(employee){
-      return employee.Name === event.target.value || employee.LastName === event.target.value;
+      return employee.Name === event.target.value || employee.LastName === event.target.value || employee.email === event.target.value;
     });
 
     console.log(newOBj);
