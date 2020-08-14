@@ -3,8 +3,8 @@ import "./style.css";
 
 function TableHead(props) {
     return (
-        <table class="table">
-            <thead class="thead-dark">
+        <table className="table">
+            <thead className="thead-dark">
                 <tr>
                     <th scope="col">Img</th>
                     <th scope="col">Name</th>
