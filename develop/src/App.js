@@ -18,6 +18,12 @@ class App extends Component {
     this.setState({key: this.state.key + 1})
   }
 
+  SortByName = ()=> {
+    this.setState({employees :employees.sort((a, b) => (a.Name > b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName > b.LastName) ? 1 : -1) : -1 ) })
+  }
+
+  
+
 
   handleInputChange = event => {
     this.setState({ value: event.target.value });
@@ -60,7 +66,9 @@ class App extends Component {
           </form>
         </div>
         <br />
-        <TableHead>
+        <TableHead 
+        SortByName = {this.SortByName}
+        >
           <tbody>
           {this.state.employees.map(employee => (
             <TableBody

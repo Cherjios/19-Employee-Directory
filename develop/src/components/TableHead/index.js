@@ -7,7 +7,10 @@ function TableHead(props) {
             <thead className="thead-dark">
                 <tr>
                     <th scope="col">Img</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Name
+                    <span onClick={() => props.SortByName} className="">
+                            ^
+                    </span></th>
                     <th scope="col">Last Name</th>
                     <th scope="col">email</th>
                     <th scope="col">Phone Number</th>
