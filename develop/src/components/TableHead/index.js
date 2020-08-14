@@ -14,16 +14,7 @@ function TableHead(props) {
                     <th scope="col">Department</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>{props.img}</td>
-                    <td>{props.name}</td>
-                    <td>{props.LastName}</td>
-                    <td>{props.email}</td>
-                    <td>{props.phoneNumber}</td>
-                    <td>{props.Department}</td>
-                </tr>
-            </tbody>
+            {props.children}
         </table>
     );
 }

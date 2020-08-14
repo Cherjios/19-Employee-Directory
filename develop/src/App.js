@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Title from "./components/Title"
 import TableHead from "./components/TableHead"
 import employees from "./EmployeeDirectory.json"
+import TableBody from "./components/TableBody";
+import Form from "./components/Form";
 
 
 class App extends Component {
@@ -16,17 +18,19 @@ state = {
     return(
       <div>
          <Title className="bg-success"> Employee Directory</Title>
-        {this.state.employees.map(employee => (
-          <TableHead
+         <Form />
+          <TableHead>
+          {this.state.employees.map(employee => (
+          <TableBody
           img={employee.img}
-          name={employee.Name}
-          lastName={employee.LastName}
+          Name={employee.Name}
+          LastName={employee.LastName}
           email={employee.email}
-          phone={employee.phoneNumber}
-          department={employee.Department}
-          />
+          phoneNumber={employee.phoneNumber}
+          Department={employee.Department}
+        />
         ))}
-        
+        </TableHead>
       </div>
      
     );
