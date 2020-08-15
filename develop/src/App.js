@@ -33,13 +33,23 @@ class App extends Component {
     // console.log(this.state.employees);
     this.setState({sorted:true});
     }else{
-      this.setState({ employees: employees.sort((a, b) => (a.Name < b.Name) ? 1 : (a.Name === b.Name) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
+      this.setState({ employees: employees.sort((a, b) => (a.LastName < b.LastName) ? 1 : (a.LastName === b.LastName) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
     // console.log(this.state.employees);
     this.setState({sorted:false})
     }
   }
 
-
+  SortByEmail = () => {
+    if(!this.state.sorted){
+      this.setState({ employees: employees.sort((a, b) => (a.email > b.email) ? 1 : (a.email === b.email) ? ((a.Name > b.Name) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:true});
+    }else{
+      this.setState({ employees: employees.sort((a, b) => (a.email < b.email) ? 1 : (a.email === b.email) ? ((a.email < b.email) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:false})
+    }
+  }
 
 
   handleInputChange = event => {
@@ -86,6 +96,7 @@ class App extends Component {
         <TableHead
           SortByName={this.SortByName}
           SortByLastName={this.SortByLastName}
+          SortByEmail={this.SortByEmail}
         >
           <tbody>
             {this.state.employees.map(employee => (
