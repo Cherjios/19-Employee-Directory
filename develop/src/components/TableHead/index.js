@@ -9,7 +9,7 @@ function TableHead(props) {
                     <th scope="col">Img</th>
                     <th scope="col">Name
                     <span onClick={() => props.SortByName} className="">
-                            ^
+                    (&uarr;)
                     </span></th>
                     <th scope="col">Last Name</th>
                     <th scope="col">email</th>

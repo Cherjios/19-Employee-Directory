@@ -3,7 +3,7 @@ import "./style.css";
 
 function TableBody(props) {
     return (
-                <tr>
+                <tr key={props.id}>
                     <td><img alt={props.Name} src={props.img} /></td>
                     <td>{props.Name}</td>
                     <td>{props.LastName}</td>

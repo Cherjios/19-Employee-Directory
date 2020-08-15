@@ -20,6 +20,7 @@ class App extends Component {
 
   SortByName = ()=> {
     this.setState({employees :employees.sort((a, b) => (a.Name > b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName > b.LastName) ? 1 : -1) : -1 ) })
+  console.log(this.setState);
   }
 
   
@@ -72,6 +73,7 @@ class App extends Component {
           <tbody>
           {this.state.employees.map(employee => (
             <TableBody
+            key={employee.id}
               img={employee.img}
               Name={employee.Name}
               LastName={employee.LastName}
