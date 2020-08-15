@@ -10,20 +10,15 @@ class App extends Component {
   // Setting this.state.employees to the employees json array
   state = {
     employees: employees,
-    value: "",
-    key: 0
+    value: ""
   };
 
-  keyNumber = ( )=>{
-    this.setState({key: this.state.key + 1})
+  SortByName = () => {
+    this.setState({ employees: employees.sort((a, b) => (a.Name > b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName > b.LastName) ? 1 : -1) : -1) })
+    console.log(this.setState);
   }
 
-  SortByName = ()=> {
-    this.setState({employees :employees.sort((a, b) => (a.Name > b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName > b.LastName) ? 1 : -1) : -1 ) })
-  console.log(this.setState);
-  }
 
-  
 
 
   handleInputChange = event => {
@@ -67,22 +62,22 @@ class App extends Component {
           </form>
         </div>
         <br />
-        <TableHead 
-        SortByName = {this.SortByName}
+        <TableHead
+          SortByName={this.SortByName}
         >
           <tbody>
-          {this.state.employees.map(employee => (
-            <TableBody
-            key={employee.id}
-              img={employee.img}
-              Name={employee.Name}
-              LastName={employee.LastName}
-              email={employee.email}
-              phoneNumber={employee.phoneNumber}
-              DOB={employee.DOB}
-              Department={employee.Department}
-            />
-          ))}
+            {this.state.employees.map(employee => (
+              <TableBody
+                key={employee.id}
+                img={employee.img}
+                Name={employee.Name}
+                LastName={employee.LastName}
+                email={employee.email}
+                phoneNumber={employee.phoneNumber}
+                DOB={employee.DOB}
+                Department={employee.Department}
+              />
+            ))}
           </tbody>
         </TableHead>
       </div>

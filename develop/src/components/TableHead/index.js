@@ -8,7 +8,7 @@ function TableHead(props) {
                 <tr>
                     <th scope="col">Img</th>
                     <th scope="col">Name
-                    <span onClick={() => props.SortByName} className="">
+                    <span onClick={() => props.SortByName()} className="">
                     (&uarr;)
                     </span></th>
                     <th scope="col">Last Name</th>
