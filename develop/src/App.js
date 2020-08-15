@@ -10,12 +10,21 @@ class App extends Component {
   // Setting this.state.employees to the employees json array
   state = {
     employees: employees,
-    value: ""
+    value: "",
+    sorted: false
+    
   };
 
   SortByName = () => {
-    this.setState({ employees: employees.sort((a, b) => (a.Name > b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName > b.LastName) ? 1 : -1) : -1) })
-    console.log(this.setState);
+    if(!this.state.sorted){
+      this.setState({ employees: employees.sort((a, b) => (a.Name > b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName > b.LastName) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:true});
+    }else{
+      this.setState({ employees: employees.sort((a, b) => (a.Name < b.Name) ? 1 : (a.Name === b.Name) ? ((a.LastName < b.LastName) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:false})
+    }
   }
 
 
