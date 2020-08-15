@@ -45,7 +45,7 @@ class App extends Component {
     // console.log(this.state.employees);
     this.setState({sorted:true});
     }else{
-      this.setState({ employees: employees.sort((a, b) => (a.email < b.email) ? 1 : (a.email === b.email) ? ((a.email < b.email) ? 1 : -1) : -1) })
+      this.setState({ employees: employees.sort((a, b) => (a.email < b.email) ? 1 : (a.email === b.email) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
     // console.log(this.state.employees);
     this.setState({sorted:false})
     }
@@ -53,11 +53,35 @@ class App extends Component {
 
   SortByPhoneNumber= () => {
     if(!this.state.sorted){
-      this.setState({ employees: employees.sort((a, b) => (a.phoneNumber > b.phoneNumber) ? 1 : (a.phoneNumber === b.honeNumber) ? ((a.phoneNumber > b.phoneNumber) ? 1 : -1) : -1) })
+      this.setState({ employees: employees.sort((a, b) => (a.phoneNumber > b.phoneNumber) ? 1 : (a.phoneNumber === b.honeNumber) ? ((a.Name > b.Name) ? 1 : -1) : -1) })
     // console.log(this.state.employees);
     this.setState({sorted:true});
     }else{
-      this.setState({ employees: employees.sort((a, b) => (a.phoneNumber < b.phoneNumber) ? 1 : (a.phoneNumber === b.phoneNumber) ? ((a.phoneNumber < b.phoneNumber) ? 1 : -1) : -1) })
+      this.setState({ employees: employees.sort((a, b) => (a.phoneNumber < b.phoneNumber) ? 1 : (a.phoneNumber === b.phoneNumber) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:false})
+    }
+  }
+
+  SortByDOB= () => {
+    if(!this.state.sorted){
+      this.setState({ employees: employees.sort((a, b) => (a.DOB > b.DOB) ? 1 : (a.DOB === b.DOB) ? ((a.Name > b.Name) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:true});
+    }else{
+      this.setState({ employees: employees.sort((a, b) => (a.DOB < b.DOB) ? 1 : (a.DOB === b.DOB) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:false})
+    }
+  }
+
+  SortByDepartment= () => {
+    if(!this.state.sorted){
+      this.setState({ employees: employees.sort((a, b) => (a.Department > b.Department) ? 1 : (a.Department === b.Department) ? ((a.Name > b.Name) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:true});
+    }else{
+      this.setState({ employees: employees.sort((a, b) => (a.Department < b.Department) ? 1 : (a.Department === b.Department) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
     // console.log(this.state.employees);
     this.setState({sorted:false})
     }
@@ -110,6 +134,8 @@ class App extends Component {
           SortByLastName={this.SortByLastName}
           SortByEmail={this.SortByEmail}
           SortByPhoneNumber={this.SortByPhoneNumber}
+          SortByDOB={this.SortByDOB}
+          SortByDepartment={this.SortByDepartment}
         >
           <tbody>
             {this.state.employees.map(employee => (

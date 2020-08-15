@@ -23,8 +23,14 @@ function TableHead(props) {
                     <span onClick={() => props.SortByPhoneNumber()} className="">
                     (&uarr;)
                     </span></th>
-                    <th scope="col">DOB</th>
-                    <th scope="col">Department</th>
+                    <th scope="col">DOB
+                    <span onClick={() => props.SortByDOB()} className="">
+                    (&uarr;)
+                    </span></th>
+                    <th scope="col">Department
+                    <span onClick={() => props.SortByDepartment()} className="">
+                    (&uarr;)
+                    </span></th>
                 </tr>
             </thead>
             {props.children}
