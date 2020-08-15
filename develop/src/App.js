@@ -115,11 +115,12 @@ class App extends Component {
   render() {
 
     return (
-      <div className="container">
+      <div className="container bg-light">
         <Title className="bg-success"> Employee Directory</Title>
 
         <div>
           <form>
+          <label for="exampleInputEmail1">Search by Name, Last name, email, Phone Number, DOB and Department</label>
             <input className="form-control form-control-lg"
               value={this.state.firstName}
               name="firstName"
