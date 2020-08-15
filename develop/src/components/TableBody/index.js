@@ -9,6 +9,7 @@ function TableBody(props) {
                     <td>{props.LastName}</td>
                     <td>{props.email}</td>
                     <td>{props.phoneNumber}</td>
+                    <td>{props.DOB}</td>
                     <td>{props.Department}</td>
                 </tr>
     );

@@ -14,6 +14,7 @@ function TableHead(props) {
                     <th scope="col">Last Name</th>
                     <th scope="col">email</th>
                     <th scope="col">Phone Number</th>
+                    <th scope="col">DOB</th>
                     <th scope="col">Department</th>
                 </tr>
             </thead>

@@ -5,6 +5,7 @@
         "LastName":"Perez",
         "email":"juanperez1@gmail.com",
         "phoneNumber":"415-723-2752",
+        "DOB":"02-25-1982",
         "Department":"Sales"
     },
     {
@@ -13,6 +14,7 @@
         "LastName":"Rodriguez",
         "email":"Rodbrenda@hotmail.com",
         "phoneNumber":"123-345-3434",
+        "DOB":"03-15-1983",
         "Department":"Billing"
     },
     {
@@ -21,6 +23,8 @@
         "LastName":"Escalante",
         "email":"caresca@gmail.com",
         "phoneNumber":"415-234-5566",
+        "phoneNumber":"123-345-3434",
+        "DOB":"04-01-1989",
         "Department":"Marketing"
     },
     {
@@ -29,6 +33,7 @@
         "LastName":"Gomez",
         "email":"ximegomez@gmail.com",
         "phoneNumber":"423-345-6677",
+        "DOB":"12-11-1983",
         "Department":"Production"
     },
     {
@@ -37,6 +42,7 @@
         "LastName":"Jones",
         "email":"brettjones01@hotmail.com",
         "phoneNumber":"654-876-9887",
+        "DOB":"11-10-1993",
         "Department":"Sales"
     },
     {
@@ -45,6 +51,7 @@
         "LastName":"Sati",
         "email":"satiala@gmail.com",
         "phoneNumber":"415-736-4456",
+        "DOB":"05-28-1987",
         "Department":"Production"
     },
     {
@@ -53,6 +60,7 @@
         "LastName":"Funes",
         "email":"funesrony@gmail.com",
         "phoneNumber":"425-346-6667",
+        "DOB":"06-07-1989",
         "Department":"Billing"
     },{
         "img":"https://randomuser.me/api/portraits/women/76.jpg",
@@ -60,6 +68,7 @@
         "LastName":"Mojica",
         "email":"nancyrey@hotmail.com",
         "phoneNumber":"413-234-4322",
+        "DOB":"10-23-1990",
         "Department":"Engineering"
     },
     {
@@ -68,6 +77,7 @@
         "LastName":"Cruz",
         "email":"jxcruz@hotmail.com",
         "phoneNumber":"415-345-3838",
+        "DOB":"09-08-1992",
         "Department":"Production"
     },
     {
@@ -76,6 +86,7 @@
         "LastName":"Aguirre",
         "email":"alexag@gmail.com",
         "phoneNumber":"345-345-5432",
+        "DOB":"08-08-1988",
         "Department":"Production"
     },
     {
@@ -84,6 +95,7 @@
         "LastName":"Palermo",
         "email":"donapale@gmail.com",
         "phoneNumber":"234-345-3258",
+        "DOB":"07-22-1990",
         "Department":"Sales"
     },
     {
@@ -92,6 +104,7 @@
         "LastName":"Zati",
         "email":"zatileo@hotmail.com",
         "phoneNumber":"123-564-5678",
+        "DOB":"03-14-1988",
         "Department":"Engineering"
     },
     {
@@ -100,6 +113,7 @@
         "LastName":"Kuhele",
         "email":"kaku@hotmail.com",
         "phoneNumber":"345-345-6767",
+        "DOB":"01-22-1991",
         "Department":"Sales"
     },
     {
@@ -108,6 +122,7 @@
         "LastName":"Lopez",
         "email":"perdrolopez01@gmail.com",
         "phoneNumber":"477-711-0647",
+        "DOB":"12-22-1990",
         "Department":"Marketing"
     },
     {
@@ -116,6 +131,7 @@
         "LastName":"Quezada",
         "email":"perdroquezada01@gmail.com",
         "phoneNumber":"477-009-0647",
+        "DOB":"02-14-1978",
         "Department":"Sales"
     },
     {
@@ -124,6 +140,7 @@
         "LastName":"Zamora",
         "email":"cesarzamora@gmail.com",
         "phoneNumber":"997-009-0647",
+        "DOB":"11-20-1974",
         "Department":"Engineering"
     },
     {
@@ -132,6 +149,7 @@
         "LastName":"Lopez",
         "email":"ana02lopez01@gmail.com",
         "phoneNumber":"477-666-0647",
+        "DOB":"5-23-1973",
         "Department":"Sales"
     },
     {
@@ -140,6 +158,7 @@
         "LastName":"Ruiz",
         "email":"laperra@gmail.com",
         "phoneNumber":"477-998-0647",
+        "DOB":"6-02-1979",
         "Department":"Billing"
     },
     {
@@ -148,6 +167,7 @@
         "LastName":"Torres",
         "email":"torresc@gmail.com",
         "phoneNumber":"111-876-0647",
+        "DOB":"04-23-1978",
         "Department":"Marketing"
     }
 

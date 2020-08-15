@@ -39,7 +39,7 @@ class App extends Component {
     let newOBj = employees.filter(function (employee) {
       return employee.Name.toLowerCase() === event.target.value.toLowerCase() || employee.LastName.toLowerCase() === event.target.value.toLowerCase()
         || employee.email === event.target.value || employee.phoneNumber === event.target.value || employee.Department === event.target.value
-        || employee.Name.toLowerCase() + " " + employee.LastName.toLowerCase() === event.target.value.toLowerCase();
+        || employee.Name.toLowerCase() + " " + employee.LastName.toLowerCase() === event.target.value.toLowerCase() || employee.DOB === event.target.value;
     });
 
     console.log(newOBj);
@@ -77,6 +77,7 @@ class App extends Component {
               LastName={employee.LastName}
               email={employee.email}
               phoneNumber={employee.phoneNumber}
+              DOB={employee.DOB}
               Department={employee.Department}
             />
           ))}
