@@ -19,7 +19,10 @@ function TableHead(props) {
                     <span onClick={() => props.SortByEmail()} className="">
                     (&uarr;)
                     </span></th>
-                    <th scope="col">Phone Number</th>
+                    <th scope="col">Phone Number
+                    <span onClick={() => props.SortByPhoneNumber()} className="">
+                    (&uarr;)
+                    </span></th>
                     <th scope="col">DOB</th>
                     <th scope="col">Department</th>
                 </tr>

@@ -51,6 +51,18 @@ class App extends Component {
     }
   }
 
+  SortByPhoneNumber= () => {
+    if(!this.state.sorted){
+      this.setState({ employees: employees.sort((a, b) => (a.phoneNumber > b.phoneNumber) ? 1 : (a.phoneNumber === b.honeNumber) ? ((a.phoneNumber > b.phoneNumber) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:true});
+    }else{
+      this.setState({ employees: employees.sort((a, b) => (a.phoneNumber < b.phoneNumber) ? 1 : (a.phoneNumber === b.phoneNumber) ? ((a.phoneNumber < b.phoneNumber) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:false})
+    }
+  }
+
 
   handleInputChange = event => {
     this.setState({ value: event.target.value });
@@ -97,6 +109,7 @@ class App extends Component {
           SortByName={this.SortByName}
           SortByLastName={this.SortByLastName}
           SortByEmail={this.SortByEmail}
+          SortByPhoneNumber={this.SortByPhoneNumber}
         >
           <tbody>
             {this.state.employees.map(employee => (
