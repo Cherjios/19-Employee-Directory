@@ -27,6 +27,18 @@ class App extends Component {
     }
   }
 
+  SortByLastName = () => {
+    if(!this.state.sorted){
+      this.setState({ employees: employees.sort((a, b) => (a.LastName > b.LastName) ? 1 : (a.LastName === b.LastName) ? ((a.LastName > b.LastName) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:true});
+    }else{
+      this.setState({ employees: employees.sort((a, b) => (a.Name < b.Name) ? 1 : (a.Name === b.Name) ? ((a.Name < b.Name) ? 1 : -1) : -1) })
+    // console.log(this.state.employees);
+    this.setState({sorted:false})
+    }
+  }
+
 
 
 
@@ -73,6 +85,7 @@ class App extends Component {
         <br />
         <TableHead
           SortByName={this.SortByName}
+          SortByLastName={this.SortByLastName}
         >
           <tbody>
             {this.state.employees.map(employee => (
